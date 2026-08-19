@@ -15,7 +15,7 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ip-172-31-11-197 # <-- use your EC2 public IP
+          host: 3.215.180.81 # <-- use your EC2 public IP
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
